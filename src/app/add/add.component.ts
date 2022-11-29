@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent {
+  userId=""
+  id=""
+  title=""
+  body=""
 
+addValues =()=>
+{
+
+  let data:any =
+  {
+    "userId":this.userId,"id":this.id,"title":this.title,"body":this.body
+
+  }
+  console.log(data)
+
+}
 }
